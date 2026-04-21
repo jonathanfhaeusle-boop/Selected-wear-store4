@@ -12,7 +12,7 @@ export default function AboutPage() {
           </p>
           <p className="copy">
             Der Fokus liegt auf Logo, klaren Schnitten und einem ruhigen grau-weißen Look.
-          </p>
+          </p>  	
         </div>
 
         <div className="logo-panel">
