@@ -1,0 +1,15 @@
+import Image from "next/image";
+
+<Image
+  src="/images/selectedwear-logo.png"
+  alt="Logo"
+  width={500}
+  height={500}
+/>
+
+<Image
+  src="/images/hoodie-techpack.png"
+  alt="Hoodie"
+  width={700}
+  height={700}
+/>
