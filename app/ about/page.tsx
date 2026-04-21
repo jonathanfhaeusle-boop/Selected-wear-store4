@@ -1,3 +1,3 @@
 export default function AboutPage() {
-  return <h1>TEST ABOUT LIVE</h1>;
+  return <h1>ABOUT TEST</h1>;
 }
