@@ -1,15 +1,21 @@
 import Image from "next/image";
 
-<Image
-  src="/images/selectedwear-logo.jpeg"
-  alt="Selectedwear Logo"
-  width={300}
-  height={300}
-/>
-
-<Image
-  src="/images/hoodie-techpack.jpeg"
-  alt="Hoodie Tech Pack"
-  width={500}
-  height={500}
-/>
+export default function Home() {
+  return (
+    <main>
+      <h1>TEST</h1>
+      <Image
+        src="/images/selectedwear-logo.jpeg"
+        alt="Logo"
+        width={300}
+        height={300}
+      />
+      <Image
+        src="/images/hoodie-techpack.jpeg"
+        alt="Hoodie"
+        width={500}
+        height={500}
+      />
+    </main>
+  );
+}
