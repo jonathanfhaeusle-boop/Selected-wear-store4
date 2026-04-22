@@ -1,13 +1,28 @@
-import Image from "next/image";
 import Link from "next/link";
-import { ProductCard } from "../components/ProductCard";
-import { products } from "../data/products";
 
-export default function Home() {
-  const essentials = products.slice(0, 3);
-
+export default function HomePage() {
   return (
     <main>
+      <header className="site-header">
+        <div className="container header-inner">
+          <a href="/">
+            <img
+              src="/images/selectedwear-logo.jpeg"
+              alt="Selectedwear Logo"
+              className="brand-logo"
+            />
+          </a>
+
+          <nav className="main-nav">
+            <Link href="/">Home</Link>
+            <Link href="/shop">Shop</Link>
+            <Link href="/about">About</Link>
+            <Link href="/contact">Contact</Link>
+            <Link href="/cart">Cart</Link>
+          </nav>
+        </div>
+      </header>
+
       <section className="hero">
         <div className="container hero-grid">
           <div>
@@ -27,11 +42,9 @@ export default function Home() {
           </div>
 
           <div className="hero-card">
-            <Image
+            <img
               src="/images/selectedwear-logo.jpeg"
               alt="Selectedwear Logo"
-              width={700}
-              height={700}
               className="hero-logo"
             />
           </div>
@@ -49,33 +62,11 @@ export default function Home() {
           </div>
 
           <div className="design-card">
-            <Image
+            <img
               src="/images/hoodie-techpack.jpeg"
               alt="Hoodie Tech Pack"
-              width={768}
-              height={768}
               className="design-image"
             />
-          </div>
-        </div>
-      </section>
-
-      <section className="section section-soft">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">Collection</p>
-              <h2>Our Essentials</h2>
-            </div>
-            <Link href="/shop" className="text-link">
-              Alles ansehen
-            </Link>
-          </div>
-
-          <div className="product-grid">
-            {essentials.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
           </div>
         </div>
       </section>
