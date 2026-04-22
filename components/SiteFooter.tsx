@@ -22,7 +22,9 @@ export function SiteFooter() {
 
         <div>
           <h4>Info</h4>
-          <p className="muted">Hier kannst du später Impressum, Versand und Datenschutz ergänzen.</p>
+          <p className="muted">
+            Hier kannst du später Impressum, Versand und Datenschutz ergänzen.
+          </p>
         </div>
       </div>
     </footer>
