@@ -78,7 +78,9 @@ export default function CartPage() {
                 <span>Gesamt</span>
                 <strong>€{total}</strong>
               </div>
-              <button className="button button-dark full-width">Checkout</button>
+              <button className="button button-dark full-width">
+                Checkout
+              </button>
             </aside>
           </div>
         )}
